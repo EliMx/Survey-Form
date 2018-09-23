@@ -28,4 +28,21 @@ body{
   margin: 20px 0px 20px 0px;
 }
 
+#probable{
+  color:green;
+}
+
+#nose{
+  color:orange;
+}
+#no{
+  color:red;
+}
+
+#submit{
+  font-family: Montserrat, monospace;
+  margin-bottom:30px;
+}
+
 </style>
+
