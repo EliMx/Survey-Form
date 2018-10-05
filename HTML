@@ -3,9 +3,9 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <head >
   <div class= "top-box" id="encabezado">  
-<h1 id="title">Survey Form</h1>
+<h1 id="title">Encuesta abducciones</h1>
  
-<h2>¿Como se siente usted realizando el #100DaysOfCode?
+<h2>¿Como se siente usted despues de haber sido abducido?
   </h2>
   </div>
 </head>
@@ -13,53 +13,67 @@
 <main id="main">
 
 <form class="quiz-box" id="survey-form">
-<p id="description">Hablanos un poco sobre ti</p>
-  <h3>Ingresa tus datos:</h3>
+<p class="label" id="description">Hablanos un poco sobre ti</p>
+  <p><h3 class="label" >Ingresa tus datos:</h3></p>
+ 
   <p>
-  <lable for="name-label"> Nombre:
-  <input id="name" placeholder="Ingrese su nombre completo"> </input>
-  </lable>
+    <div >
+      <label class="label" id="name-label" for="name"> Nombre:</label></div>
+  <input name="name" id="name"  type="text" placeholder="xxxxx" required></input>
 </p>
 <p >
-  <lable for="email-label"> Email:
-  <input id="email" placeholder="Ingrese su email"> </input>
-</lable>
+  <div >
+    <label class="label" id="email-label" for="email"> Email:</label></div>
+  <input name="email" id="email" type="email" placeholder="xxxx@xxx.com" required> </input>
+
 </p>
 <p>
-  <lable for="number-label"> Numero:
-  <input id="number" placeholder="Ingrese su nuero"></input>
-</lable>
+  <div >
+    <label class="label" id="number-label" for="number"> Numero:</label></div>
+  <input name="number" id="number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" max="10" min ="10" type="number" placeholder="xxx-xxx-xxxx" required></input>
+
 </p>
+
+<div>
+  <p><label id="PreguntaRadio" class="label">¿Cuantas veces recuerdas haber sido abducido?</label></p>
+<input id="dia" type="number" required></input>
+</div>
 
 <p>
-  <h3 id="PreguntaRadio">¿En que dia del Challenge te encuentras?</h3>
-<lable id="dia">
-<input id="dia"></input>
-</lable>
-</p>
-
+<label id="PreguntaRadio" class="label">Selecciona la frase que mas describa tu mas reciente experiencia</label>
 <p>
-<h3 id="PreguntaRadio">¿Como ha sido tu experiencia hasta ahora?</h3>
-<p><lable id="encanta"><input id="encanta" type="radio"> Me encanta!</lable>
-  <lable id="bien"><input id="bien" type="radio"> Ha estado bien</lable>
-  <lable id="meh"><input id="meh" type="radio">Pues ... meh</lable>
-  <lable id="mal"><input id="mal" type="radio">No ha sido buena experiencia</lable>
-  <lable id="horrible"><input id="horrible" type="radio">No me ha gustado para nada, horrible!</lable>
+  <label class="label" id="horrible" class="labels "><input name="radio-buttons" id="horrible" type="radio" value="5">wubba lubba dub dub</label>
+  <label class="label" id="encanta"><input name="radio-buttons" id="encanta" type="radio" value="4"> Fuera de este mundo!</label>
+  <label class="label" id="bien"><input name="radio-buttons" id="bien" type="radio" value="4">Los instrumentos estaban muy helados</label>
+  <label class="label" id="meh"><input name="radio-buttons" id="meh" type="radio" value="2">Me senti en familia</label>
+<label  class="label" id="horrible" class="labels "><input name="radio-buttons" id="horrible" type="radio" value="1">Siento que fui violado y creo que me gusto</label>
+  <label class="label" id="mal"><input name="radio-buttons" id="mal" type="radio" value="0">Hubiera querido que me invitaran una cena antes de llegar tan lejos</label>
+</p>
+<label class="label" >¿A que especie perteneces?</label>
+<div>
+<select class="dpd" id="dropdown" type="button" onclick="myFunction()" class="dropdown1" >
+  <option disabled value>Opciones</option>
+  <option >Humano</option>
+  <option >Planta</option>
+  <option >Animal</option>
+  <option >Otro</option>
+  </select>
+  </div>
+  <div><label class="label" id="PreguntaRadio">¿Que tan probable es que recomiendes a un amigo el ser abducido por nosotros?</label>
+    
+</div>
+<div>
+  <label class="label" id="probable" ><input class="checkbox" id="Probable" type="checkbox" value="3">Muy probable, es una experiencia casi religiosa</label></div>
+<div><label class="label" id="nose" ><input class="checkbox" id="nose" type="checkbox" value="2">No lo se. Me siento confundido</label></div>
+<div><label class="label" id="no"><input class="checkbox" id="no" type="checkbox" value="1">Para nada, la otra compañia lo hace mejor y con manos tibias</label></div>
 </p>
 
-
-  <h3 id="PreguntaRadio">¿Que tan probable es que recomiendes a un amigo el Challenge?</h3>
-<lable id="probable"><input id="probable" type="checkbox" >Muy probable</lable>
-<lable id="nose"><input id="nose" type="checkbox">No lo se todavia</lable>
-<lable id="no"><input id="no" type="checkbox">Nada probable</lable>
-</p>
-
-<p>Ingrese sus comentarios:</p>
+<p><label class="label">Ingrese sus comentarios, se lo agradeceremos</label></p>
 <p>
-<textarea></textarea>
+  <textarea class="textarea"></textarea>
 </p>
 
-<button id="submit" type="submit">Enviar</button>
+<button id="submit" type="submit">Enviar a velocidad de la luz</button>
 </form>
 </div>
 </main>
